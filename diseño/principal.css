@@ -1,0 +1,560 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e4b92d;
+    font-family: 'calibri';
+}
+.menu{
+    list-style-type: none;
+    padding: 0;
+    background: black;
+    width: 100%;
+    margin: auto;
+}
+.menu ul{
+    text-align: center;
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 15px 50px;
+    font-weight: bold;
+    display: block;
+
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+.menu li a:hover{
+    background:  #e4b92d;
+}
+header{
+    background: url('../img/portada/fondo.jpg');
+	background-size: cover;
+	height: 350px;
+	background-repeat: no-repeat;
+}
+.headerComida{
+    background: url('../img/portada/alimento.jpg');
+	background-size: cover;
+	height: 240px;
+	background-repeat: no-repeat;
+}
+.headerPostre{
+    background: url('../img/portada/postres.jpg');
+	background-size: cover;
+	height: 240px;
+	background-repeat: no-repeat;
+}
+.headerBebida{
+    background: url('../img/portada/bebidas.jpg');
+	background-size: cover;
+	height: 240px;
+	background-repeat: no-repeat;
+}
+.headerPromo{
+    background: url('../img/portada/promociones.jpg');
+	background-size: cover;
+	height: 240px;
+	background-repeat: no-repeat;
+}
+.portada{
+	max-width: 1000px;
+	margin: auto;
+	padding: 10px 0;
+}
+.portada h1{
+	font-size: 110px;
+	text-align: center;
+    font-weight: bold;
+    color: white;
+    text-shadow: 3px 3px 2px black;
+}
+
+.portada p1{
+	color:  gold;
+}
+.lema{
+	text-align: center;
+}
+.lema p {
+	font-size: 25px;
+	margin-bottom: 50px;
+	text-shadow: 3px 3px 2px black;
+    color: white;
+}
+
+/*Prueba de cartas*/
+
+.card{
+    display: flex;
+    width: 650px;
+    height: auto;
+    margin: 10px 9px;
+    background: rgba(0, 0, 0, 0.041);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.11);
+
+}
+.foto{
+    height: 230px;
+    width: 314px;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+.titulo{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.descrip{
+    text-align: center;
+    font-size: 15px;
+}
+.fechas{
+    text-align: center;
+    font-size: 15px;
+}
+.precio{
+    text-align: center;
+}
+.subtitulo{
+    text-align: center;
+    margin: 20px;
+    font-size: 40px;
+    font-family: cursive;
+}
+.login{
+    margin: 0;
+    padding: 0;
+    background: url('../img/portada/login.jpg');
+}
+.cuadro{
+    width: 320px;
+    height: 420px;
+    background: rgba(0, 0, 0, 0.938);
+    color: #e4b92d;
+    top: 55%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 65px 30px;
+}
+.titulogin{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+}
+.subLogin{
+    padding: 0 0 18px;
+    text-align: center;
+}
+
+.cuadro p{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.textoLogin{
+    width: 100%;
+    height: 26px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 13px;
+    padding: 0 15px;
+    outline: none;
+}
+.boton{
+    width: 40%;
+    background: #e4b92d;
+    border: none;
+    padding: 8px 30px;
+    border-radius: 15px;
+    margin-left: 75px;
+    margin-top: 20px;
+    outline: none;
+}
+.barraIzq{
+    width: 100px;
+}
+.opciones{
+    padding: 8px 30px;
+    font-size: 25px;
+    text-decoration: none;
+}
+.tablaIzq{
+    height: 100px;
+    padding: 30px 0px;
+    text-align: center;
+}
+.anchoTab{
+    width: 50px;
+}
+.filas{
+    text-align: center;
+    width: 120px;
+    height: 45px;
+}
+.contenedor-menu{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+}
+.cont-menu{
+    width: auto;
+    max-width: 200px;
+    height: 100vh;
+    background: white;
+}
+.cont-menu nav{
+    transform: translateY(15%);
+}
+.cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 18%;
+    text-align: center;
+    font-size: 25px;
+    color: black;
+}
+.cont-menu nav a:hover{
+    background: #e4b92d;
+}
+.contenedor-user{
+    position: absolute;
+    width: 1000px;
+    height: auto;
+    left: 14%;
+    margin-top: 10px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    background: white;
+}
+.contenedor-user p{
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+.contenedor-user .agregarBTN{
+    width: 40%;
+    background: #F46036;
+    color: white;
+    border: none;
+    height: 20px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    margin-left: 775px;
+    text-decoration: none;
+    outline: none;
+}
+.contenedor-user .editarBTN{
+    width: 40%;
+    background: #1B998B;
+    color: white;
+    border: none;
+    height: 20px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    outline: none;
+}
+.contenedor-user .eliminarBTN{
+    width: 40%;
+    background: #D7263D;
+    color: white;
+    border: none;
+    height: 20px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    outline: none;
+}
+.agregar-user{
+    width: 350px;
+    height: 480px;
+    background: white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 40px 30px;
+}
+.agregar-user p{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.agregar-user input{
+    width: 100%;
+    margin-top: 5px;
+    height: 26px;
+    border: none;
+    margin-bottom: 9px;
+    box-shadow: 2px 2px 5px #999;
+    border-radius: 13px;
+    padding: 0 15px;
+    outline: none;
+}
+.agregar-user .agregar{
+    width: 40%;
+    background: #e4b92d;
+    border: none;
+    height: 30px;
+    padding: 8px 30px;
+    border-radius: 15px;
+    margin-left: 75px;
+    margin-top: 20px;
+    outline: none;
+}
+.editar-user{
+    width: 350px;
+    height: 480px;
+    background: white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 40px 30px;
+}
+.editar-user p{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.editar-user input{
+    width: 100%;
+    margin-top: 5px;
+    height: 26px;
+    border: none;
+    margin-bottom: 9px;
+    box-shadow: 2px 2px 5px #999;
+    border-radius: 13px;
+    padding: 0 15px;
+    outline: none;
+}
+.editar-user .editar{
+    width: 40%;
+    background: #e4b92d;
+    border: none;
+    height: 30px;
+    padding: 8px 30px;
+    border-radius: 15px;
+    margin-left: 75px;
+    margin-top: 20px;
+    outline: none;
+}
+.editar-user label{
+    font-weight: bold;
+}
+.agregar-user label{
+    font-weight: bold;
+}
+.tituAgregar{
+    padding: 0 0 18px;
+    text-align: center;
+}
+.contenedor-productos{
+    position: absolute;
+    width: 500px;
+    height: auto;
+    left: 38%;
+    margin-top: 10px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    background: white;
+}
+.contenedor-productos p{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.contenedor-productos label{
+    font-weight: bold;
+    font-size: 15px;
+}
+.contenedor-productos input{
+    width: 100%;
+    margin-top: 5px;
+    height: 26px;
+    border: none;
+    margin-bottom: 9px;
+    box-shadow: 2px 2px 5px #999;
+    border-radius: 13px;
+    padding: 0 15px;
+    outline: none;
+}
+.contenedor-promo{
+    position: absolute;
+    width: 500px;
+    height: auto;
+    left: 38%;
+    margin-top: 10px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    background: white;
+}
+.contenedor-promo p{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.contenedor-promo label{
+    font-weight: bold;
+    font-size: 15px;
+}
+.contenedor-promo input{
+    width: 100%;
+    margin-top: 5px;
+    height: 26px;
+    border: none;
+    margin-bottom: 9px;
+    box-shadow: 2px 2px 5px #999;
+    border-radius: 13px;
+    padding: 0 15px;
+    outline: none;
+}
+.contenedor-categoria{
+    position: absolute;
+    width: 500px;
+    height: auto;
+    left: 38%;
+    margin-top: 10px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    background: white;
+}
+.contenedor-categoria p{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.contenedor-categoria label{
+    font-weight: bold;
+    font-size: 15px;
+}
+.contenedor-categoria input{
+    width: 100%;
+    margin-top: 5px;
+    height: 26px;
+    border: none;
+    margin-bottom: 9px;
+    box-shadow: 2px 2px 5px #999;
+    border-radius: 13px;
+    padding: 0 15px;
+    outline: none;
+}
+.contenedor-salir{
+    position: absolute;
+    width: 500px;
+    height: auto;
+    left: 38%;
+    margin-top: 230px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    background: white;
+}
+.contenedor-salir p{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.contenedor-salir label{
+    font-weight: bold;
+    font-size: 15px;
+}
+.contenedor-salir .botonSalir{
+    width: 30%;
+    margin-top: 5px;
+    height: 30px;
+    border: none;
+    margin-bottom: 9px;
+    color: white;
+    background: #D7263D;
+    box-shadow: 2px 2px 5px #999;
+    border-radius: 13px;
+    padding: 0 15px;
+    outline: none;
+    margin-left: 160px;
+}
+
+/* Diseño del crud productos */
+
+.tabla-productos{
+    position: absolute;
+    width: 1070px;
+    height: auto;
+    left: 11%;
+    margin-top: 10px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    background: white;
+}
+
+.tabla-productos p{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.editarPBTN{
+    width: 40%;
+    background: #1B998B;
+    color: white;
+    border: none;
+    height: 20px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    outline: none;
+}
+
+.eliminarPBTN{
+    width: 40%;
+    background: #D7263D;
+    color: white;
+    border: none;
+    height: 20px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    outline: none;
+}
+
+.agregarPBTN{
+    width: 40%;
+    background: #F46036;
+    color: white;
+    border: none;
+    height: 20px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    outline: none;
+}
+
+/* Agregar Producto diseño*/
+.agregar-producto{
+    width: 350px;
+    height: 480px;
+    background: white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 40px 30px;
+}
