@@ -44,6 +44,12 @@
                         <option value="0">No mostrar</option>
                     </select></td>
                 </tr>
+                <tr height = "40px">
+                    <!--Campo imagen-->
+                    <td><label for="imagen">Imagen del producto: </label></td>
+                    <td><input type="file" name="imagen" ></td>
+                    
+                </tr>
                 <tr height = "80px">
                     <!--Boton-->
                     <td colspan="2" align="center"><input class="agregarProBTN" type="submit" name="agregarProducto" value="Agregar"></td>
@@ -61,6 +67,12 @@
             $passwd="toor";
             $fila = 0;
             $columna = 0;
+            
+            $nombre_img=$_FILES['imagen']['name'];
+            $ruta = "/Imágenes/".$nombre_img;
+            $archivo=$_FILES['imagen']['tmp_name'];
+            move_uploaded_file($archivo, $ruta);
+
             if (isset($_POST["nombre"]) || isset($_POST["descripcion"]) || 
             isset($_POST["precio"]) || isset($_POST["categoria"]) || isset($_POST["destacado"])){
                 $nombre = $_POST["nombre"];
@@ -73,6 +85,7 @@
                 '".$categoria."','".$destacado."')";
                 $con = new mysqli($host, $user, $passwd, $db);
                 if($resultado=$con->query($sql)){
+
                     echo"<html>
                     <head>
                         <meta http-equiv='Refresh' content='0;url=\"./productos.php\"'>
@@ -80,10 +93,6 @@
                 }
             }
         ?>
-    </div>
-</body>
-
-
     </div>
 </body>
 </html>

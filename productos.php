@@ -65,10 +65,10 @@
                                 <td class='filas'>".$fila[4]."</td>
                                 <td class='filas'>".$fila[5]."</td>
                                 <td>
-                                    <a class='editarPBTN' href='editarAlumno.php?id=".$fila[0]."'>Editar</a>
+                                    <a class='editarPBTN' href='editarProductos.php?id=".$fila[0]."'>Editar</a>
                                 </td>
                                 <td>
-                                <a class='eliminarPBTN' href='eliminarAlumno.php?id=".$fila[0]."'>Eliminar</a>
+                                <a class='eliminarPBTN' href='eliminarProductos.php?id=".$fila[0]."'>Eliminar</a>
                                 </td>
                             </tr>";
                         }

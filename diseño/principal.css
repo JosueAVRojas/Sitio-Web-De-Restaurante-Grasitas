@@ -548,6 +548,35 @@ header{
 
 /* Agregar Producto diseño*/
 .agregar-producto{
+    width: 450px;
+    height: 480px;
+    background: white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 40px 30px;
+}
+
+.agregar-producto h1{
+    text-align: center;
+}
+
+.agregarProBTN{
+    width: 30%;
+    background: #1B998B;
+    color: white;
+    border: none;
+    height: 35px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    outline: none;
+}
+
+/**/
+.editar-producto{
     width: 350px;
     height: 480px;
     background: white;
@@ -557,4 +586,26 @@ header{
     transform: translate(-50%, -50%);
     box-sizing: border-box;
     padding: 40px 30px;
+}
+.editar-producto p{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.editar-producto input{
+    width: 100%;
+    margin-top: 5px;
+    height: 26px;
+    border: none;
+    margin-bottom: 9px;
+    box-shadow: 2px 2px 5px #999;
+    border-radius: 13px;
+    padding: 0 15px;
+    outline: none;
+}
+
+
+.editar-producto label{
+    font-weight: bold;
 }
